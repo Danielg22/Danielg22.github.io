@@ -5,11 +5,33 @@
         </head>
         <div></div>
             <body>
-            
-                <img src="http://estaticos.sport.es/resources/jpg/7/5/1389301815157.jpg"></img>
-                <img src="http://givemesport.azureedge.net/images/16/06/08/e8cc6ba703d9c3cb884ac13ba5ac6912/960.jpg"></img>
-                <img src="http://www.elpais.com.co/elpais/sites/default/files/2014/05/colp_048943.jpg"></img>
-        
+                <div class="w3-content w3-display-container">
+                <img class="MySlides" src="http://estaticos.sport.es/resources/jpg/7/5/1389301815157.jpg"></img>
+                <img class="MySlides" src="http://givemesport.azureedge.net/images/16/06/08/e8cc6ba703d9c3cb884ac13ba5ac6912/960.jpg"></img>
+                <img class="MySlides" src="http://www.elpais.com.co/elpais/sites/default/files/2014/05/colp_048943.jpg"></img>
+                <a class= "w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;
+                </a>
+                <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;
+                </a>
+            <script>
+                var SlideIndex=1;
+                ShowDivs(SlideIndex);
+                
+                function plusDivs(n){
+                    showDivs(SlideIndex+=n)
+                }
+                function showDivs(n){
+                    var i;
+                    var x=document.getElementsByClassName(MySlides);
+                    if (n > x.length) {SlideIndex=1}
+                    if (n < 1) {SlideIndex=x.length}
+                     for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                        }
+                        x[SlideIndex-1].style.display = "block";  
+                }
+            </script>
+        </div>
         <h1>Daniel Garcia</h1>
         <p>"Loyal to Atletico Junior, born in Barranquilla and colombian af.
         If you have food, I'll do whatever you want"</p>
@@ -18,6 +40,7 @@
         <img id="gif" src="http://allthingsjabu.co.za/wp-content/uploads/2014/07/colombiagoal3.gif">
         
         <iframe width="300" height="300" src="https://www.youtube.com/embed/s70OsXlDD94?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        
         </body>
     
 </html>

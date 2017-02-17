@@ -1,18 +1,14 @@
-
-.goles{
-    position:fixed;
-    margin: 0;
-    padding:0;
-    top:0;
-    left:0;
-    z-index:0;
-    width: 100%;
-    height: 100%
-}
 img{
     width:25%;
     height:400px;
-    float:right;
+
+    
+}
+
+gif{
+    width: 35%;
+    height: 250px;
+    position: fixed
     
 }
     
@@ -23,9 +19,12 @@ body{
      min-height:100%
 }
 div{
-    background-color: #3366ff
+    background-color: #3366ff;
 }
 html{
     min-height:100%;
     
+}
+iframe{
+    float:right;
 }

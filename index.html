@@ -6,32 +6,34 @@
         <div></div>
             <body>
                 <div class="w3-content w3-display-container">
-                <img class="MySlides" src="http://estaticos.sport.es/resources/jpg/7/5/1389301815157.jpg"></img>
-                <img class="MySlides" src="http://givemesport.azureedge.net/images/16/06/08/e8cc6ba703d9c3cb884ac13ba5ac6912/960.jpg"></img>
-                <img class="MySlides" src="http://www.elpais.com.co/elpais/sites/default/files/2014/05/colp_048943.jpg"></img>
+                <img class="MySlides" src="http://estaticos.sport.es/resources/jpg/7/5/1389301815157.jpg" style="width:100%" display="block"></img>
+                <img class="MySlides" src="http://givemesport.azureedge.net/images/16/06/08/e8cc6ba703d9c3cb884ac13ba5ac6912/960.jpg" style="width:100%" display="none"></img>
+                <img class="MySlides" src="http://www.elpais.com.co/elpais/sites/default/files/2014/05/colp_048943.jpg" style="width:100%" display="none"></img>
+                
                 <a class= "w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;
-                </a>
+            </a>
                 <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;
-                </a>
+            </a>
+            </div>
             <script>
                 var SlideIndex=1;
-                ShowDivs(SlideIndex);
+                showDivs(SlideIndex);
                 
                 function plusDivs(n){
-                    showDivs(SlideIndex+=n)
+                    showDivs(SlideIndex+=n);
                 }
                 function showDivs(n){
                     var i;
-                    var x=document.getElementsByClassName(MySlides);
-                    if (n > x.length) {SlideIndex=1}
-                    if (n < 1) {SlideIndex=x.length}
-                     for (i = 0; i < x.length; i++) {
+                    var x=document.getElementsByClassName("MySlides");
+                    if (n > x.length) {SlideIndex=1;}
+                    if (n < 1) {SlideIndex=x.length;}
+                     for (i = 0; i < x.length; i++); {
                         x[i].style.display = "none";  
                         }
                         x[SlideIndex-1].style.display = "block";  
                 }
             </script>
-        </div>
+        
         <h1>Daniel Garcia</h1>
         <p>"Loyal to Atletico Junior, born in Barranquilla and colombian af.
         If you have food, I'll do whatever you want"</p>

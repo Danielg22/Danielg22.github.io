@@ -4,44 +4,41 @@
         <link rel="stylesheet" href="styles.css" type="text/css" />
         </head>
         <div></div>
+           <style>
+                .MySlides {display:none;}
+            </style>
             <body>
-                <div class="w3-content w3-display-container">
-                <img class="MySlides" src="http://estaticos.sport.es/resources/jpg/7/5/1389301815157.jpg" style="width:100%" display="block"></img>
-                <img class="MySlides" src="http://givemesport.azureedge.net/images/16/06/08/e8cc6ba703d9c3cb884ac13ba5ac6912/960.jpg" style="width:100%" display="none"></img>
-                <img class="MySlides" src="http://www.elpais.com.co/elpais/sites/default/files/2014/05/colp_048943.jpg" style="width:100%" display="none"></img>
+                <div class="w3-content w3-display-container" style="max width:350px">
+                </style>>
+                <img class="MySlides" src="http://estaticos.sport.es/resources/jpg/7/5/1389301815157.jpg" style="width:100%" ></img>
+                <img class="MySlides" src="http://givemesport.azureedge.net/images/16/06/08/e8cc6ba703d9c3cb884ac13ba5ac6912/960.jpg" style="width:100%" ></img>
+                <img class="MySlides" src="http://www.elpais.com.co/elpais/sites/default/files/2014/05/colp_048943.jpg" style="width:100%" ></img>
                 
-                <a class= "w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;
-            </a>
-                <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;
-            </a>
+                
             </div>
             <script>
-                var SlideIndex=1;
-                showDivs(SlideIndex);
-                
-                function plusDivs(n){
-                    showDivs(SlideIndex+=n);
-                }
-                function showDivs(n){
+                var slideIndex = 0;
+                    carousel();
+
+                    function carousel() {
                     var i;
-                    var x=document.getElementsByClassName("MySlides");
-                    if (n > x.length) {SlideIndex=1;}
-                    if (n < 1) {SlideIndex=x.length;}
-                     for (i = 0; i < x.length; i++); {
-                        x[i].style.display = "none";  
-                        }
-                        x[SlideIndex-1].style.display = "block";  
-                }
+                    var x = document.getElementsByClassName("MySlides");
+                    for (i = 0; i < x.length; i++) {
+                         x[i].style.display = "none";}
+                    slideIndex++;
+                    if (slideIndex > x.length) {slideIndex = 1;}
+                    x[slideIndex-1].style.display = "block"; 
+                    setTimeout(carousel, 2000); }
             </script>
         
         <h1>Daniel Garcia</h1>
         <p>"Loyal to Atletico Junior, born in Barranquilla and colombian af.
         If you have food, I'll do whatever you want"</p>
-        <p><button type="button" onclick="alert('HOW BOUH DAH!')">"CATCH ME OUTSIDE"</button></p>
+        <p><button type="button" onclick="alert('HOW BOUH THAT!')">"CATCH ME OUTSIDE"</button></p>
         
         <img id="gif" src="http://allthingsjabu.co.za/wp-content/uploads/2014/07/colombiagoal3.gif">
         
-        <iframe width="300" height="300" src="https://www.youtube.com/embed/s70OsXlDD94?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <p>"One of my favorite songs->"</p><iframe width="300" height="169" src="https://www.youtube.com/embed/a1S8kU9-1-A?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         
         </body>
     

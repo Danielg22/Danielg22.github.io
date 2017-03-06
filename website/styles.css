@@ -11,10 +11,8 @@ body{
     text-align:center;
     font-family:"Comic Sans MS";
     color: #ff3333;
-     min-height:100%
-}
-div{
-    background-color: #3366ff;
+    min-height:100%;
+    background-color: #3366ff
 }
 html{
     min-height:100%;

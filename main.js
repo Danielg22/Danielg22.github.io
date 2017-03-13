@@ -8,3 +8,7 @@ function come(){
     document.body.style.backgroundColor="Blue"
     
 }
+
+function Go(){
+    window.close()
+}

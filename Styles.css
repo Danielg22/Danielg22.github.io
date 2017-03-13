@@ -8,3 +8,26 @@
     color:white;
     font-size: 100px;
 }
+
+#Come{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border-color: black;
+    background-color:yellow;
+    font-family: Arial;
+    color: Black;
+    font-size: 100px;
+    
+}
+
+#Go{
+     width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border-color: Yellow;
+    background-color:Black;
+    font-family: Arial;
+    color: Yellow;
+    font-size: 100px;
+}

@@ -3,3 +3,8 @@ function sayThatWasEasy(){
     ThatWasEasy.play();
 }
 $("#easy").on("click,sayThatWasEasy");
+
+function come(){
+    document.body.style.backgroundColor="Blue"
+    
+}
